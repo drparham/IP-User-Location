@@ -1,15 +1,24 @@
 {
-    "name": "beingtomgreen/ipinfo",
+    "name": "pta/ipinfo",
     "description": "A basic PHP wrapper for adding IP based user location detection into your application using the IP Info DB API.",
     "license": "MIT",
     "authors": [
         {
             "name": "Tom Green",
             "email": "tom@beingtomgreen.com"
+        },
+        {
+            "name": "Dustin Parham",
+            "email": "dr.parham@gmail.com"
         }
     ],
-    "require": {},
-    "autoload" : {
-        "classmap": ["ipInfo.inc.php"]
+    "require": {
+
+    },
+    "autoload": {
+      "psr-4": {
+        "Pta\\IpInfo": "src/"
+
+      }
     }
 }

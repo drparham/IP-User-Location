@@ -1,4 +1,5 @@
-<?php
+<?php namespace Pta\IpInfo\Library;
+
 /**
   *
   * @author Tom Green <tom@beingtomgreen.com>

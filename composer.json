@@ -17,7 +17,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Pta\\IpInfo": "src/"
+        "Pta\\IpInfo\\": "src/"
 
       }
     }

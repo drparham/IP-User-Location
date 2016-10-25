@@ -5,19 +5,19 @@ A basic PHP wrapper for adding IP based user location detection into your applic
 
 ### Installation
 
-Add `beingtomgreen/ipinfo` as a requirement to `composer.json`:
+Add `pta/ipinfo` as a requirement to `composer.json`:
 
 ```javascript
 {
     "require": {
-        "beingtomgreen/ipinfo": "dev-master"
+        "pta/ipinfo": "0.1.*"
     }
 }
 ```
 
 Update your packages with `composer update` or install with `composer install`.
 
-You can also add the package using `composer require beingtomgreen/ipinfo` and later specifying the version you want.
+You can also add the package using `composer require pta/ipinfo` and later specifying the version you want.
 
 ### Methods
 
@@ -60,7 +60,7 @@ Example json response:
 #### Validate an IP address
 You can use `->validIP($ip)` to see if the specified IP Address is valid.
 
-Under the hood this uses `filter_var($ip, FILTER_VALIDATE_IP)`, I assume this is pretty solid. If you have any suggestions for a better way of doing this send a pull request or [drop me an email](mailto:tom@beingtomgreen.com).
+Under the hood this uses `filter_var($ip, FILTER_VALIDATE_IP)`, I assume this is pretty solid. If you have any suggestions for a better way of doing this send a pull request or [drop me an email](mailto:tom@pta.com).
 
 #### Get the user's IP address
 You can use `->getIpAddress()` to retrieve the users IP address.
@@ -92,4 +92,4 @@ setcookie('location', $location['countryCode'], time() + 3600);
 
 ### License
 
-This is open-sourced software licensed under the [MIT license](http://beingtomgreen.mit-license.org/).
+This is open-sourced software licensed under the [MIT license](http://pta.mit-license.org/).
